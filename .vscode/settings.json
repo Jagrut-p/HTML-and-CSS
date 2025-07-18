@@ -1,6 +1,9 @@
 {
     "files.associations": {
         "ALPHABET.C": "cpp",
-        "DO_WHILE.C": "cpp"
+        "DO_WHILE.C": "cpp",
+        "XTRIANGL.C": "cpp",
+        "DIAMOND.C": "cpp",
+        "PRX.C": "cpp"
     }
 }

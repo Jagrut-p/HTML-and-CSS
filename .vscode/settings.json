@@ -4,6 +4,10 @@
         "DO_WHILE.C": "cpp",
         "XTRIANGL.C": "cpp",
         "DIAMOND.C": "cpp",
-        "PRX.C": "cpp"
+        "PRX.C": "cpp",
+        "XPRATICE.C": "cpp",
+        "WHTRIANL.C": "cpp",
+        "BUBLESHO.C": "cpp",
+        "DIAGON.C": "cpp"
     }
 }

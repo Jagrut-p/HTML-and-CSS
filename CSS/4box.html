@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>BOX</title>
+        <style>
+            .first{
+            width: 50%;
+            height: 633px;
+            background-color: red;            
+                
+            }
+            .flex{
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .second{
+                background-color: blue;
+            }
+            .third{
+                background-color: green;
+            }
+            .fourth{
+                background-color: yellow;
+            }
+            .master{
+                width: 50vw;
+                height: 33vh;
+                border: 1px solid black;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex">
+            <div class="first"></div>
+            <div class="parent">
+            <div class="second master"></div>
+            <div class="third master"></div>
+            <div class="fourth master"></div>
+            </div>
+        </div>
+    </body>
+</html>

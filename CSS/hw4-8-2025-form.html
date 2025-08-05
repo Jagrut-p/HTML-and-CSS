@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            .form{
+                border: 1px solid black;
+                width: fit-content;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 5px 5px 5px #aaa, -5px 5px 5px #aaa;
+            }
+            body{
+                align-items:center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: lightblue;
+                
+            }
+            button{
+                margin-top: 10px;
+                display: block;
+                width: 100%;
+                align-items: center;
+            }
+            button:hover{
+                background-color: red;
+            }
+            .footer{
+                text-align: center;
+            }
+            input[type="text"],
+            input[type="Password"],
+            input[type="tel"]{
+                width: 100%;
+            }
+            .label{
+                font-weight: bold;/*Doubt*/
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div><h1>Login Page</h1></div>
+      <div class="form">
+        <form action="login" method="post">
+         <div><label for="name">Full Name: </label> <input name="name" id="name" type="text"></div>
+        <div><label for="email">Email: <input id="email" name="email" type="text"></label></div> 
+        <div><label for="no">Mobile Number: <input id="no" name="number" type="tel"></label></div>
+        <div><label for="dob">DOB: <input id="dob" name="dob" type="date"></label></div>
+        <div>Gender: <input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender" value="Female">Female <input type="radio" name="Gender" value="Other">Other</div>
+        <div><label for="">City:</label> <select name="City" id="">
+            <option value="none">--City--</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="USA">USA</option>
+        </select></div>
+        <div>Skills:
+            Java<input type="checkbox" name="skill" value="Java">
+            Python <input type="checkbox" name="skill" id="" name="Python">
+            HTML <input type="checkbox" name="skill" name="HTML">
+            CSS <input type="checkbox" name="skill" id="" name="CSS">
+        </div>
+        <div><label for="address">Address: </label><input name="address" id="address" type="text"></div>
+        <div><label for="photo">Profile Photo: <input name="photo" id="photo" type="file"></label></div>
+        <div><label for="password">Password: <input id="password" name="password" type="text"></label></div>
+        <div><label for="cpass">Coniform Password: </label><input name="cpass" id="cpass" type="text"></div>
+        <div class="Sign"><button type="submit">Sign up</button>  <button type="reset">Clear</button></div>
+    </form>
+    <div class="footer">
+        New User? <a href="regiter">Regiter Now</a>
+    </div>
+    </div>
+
+    </body>
+</html>

@@ -15,7 +15,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                height: 100vh;
                 margin: 0;
                 background-color: lightblue;
                 
@@ -25,6 +24,8 @@
                 display: block;
                 width: 100%;
                 align-items: center;
+                padding-bottom: 14px;
+                align-content: center;
             }
             button:hover{
                 background-color: red;
@@ -41,20 +42,40 @@
                 font-weight: bold;/*Doubt*/
                 display: block;
             }
+            input{
+                margin-bottom: 2%;
+                padding: 8px;
+            }
+            select{
+                width: 100%;
+            }
+            input[type="date"]{
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+            }
+            input[type="submit"]{
+                width: 100%;
+            }
+            input[type="reset"]{
+                padding-bottom: 10px;
+            }
 
         </style>
     </head>
     <body>
         <div><h1>Login Page</h1></div>
       <div class="form">
-        <form action="login" method="post">
-         <div><label for="name">Full Name: </label> <input name="name" id="name" type="text"></div>
-        <div><label for="email">Email: <input id="email" name="email" type="text"></label></div> 
-        <div><label for="no">Mobile Number: <input id="no" name="number" type="tel"></label></div>
-        <div><label for="dob">DOB: <input id="dob" name="dob" type="date"></label></div>
+        <form action="login" method="post1">
+         <div><label for="name">Full Name: </label> <input placeholder="Name" name="name" id="name" type="text"></div>
+        <div><label for="email">Email: <input placeholder="Email" id="email" name="email" type="text"></label></div> 
+        <div><label for="no">Mobile Number: <input placeholder="Mobile Number" id="no" name="number" type="tel" pattern="[6-9][0-9]{9}]"></label></div>
+        <div><label for="dob">DOB: <input placeholder="DOB" id="dob" name="dob" type="date" min="2024-08-23" max="2026-06-24"></label></div>
+        <div><label for="Salary">Salary</label><input type="number" min="1000" max="10000000000"></div>
         <div>Gender: <input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender" value="Female">Female <input type="radio" name="Gender" value="Other">Other</div>
-        <div><label for="">City:</label> <select name="City" id="">
-            <option value="none">--City--</option>
+        <div><label for="city">City:</label> <select name="City" id="">
+            <option>--City--</option>
             <option value="Ahmedabad">Ahmedabad</option>
             <option value="Gandhinagar">Gandhinagar</option>
             <option value="USA">USA</option>
@@ -65,11 +86,11 @@
             HTML <input type="checkbox" name="skill" name="HTML">
             CSS <input type="checkbox" name="skill" id="" name="CSS">
         </div>
-        <div><label for="address">Address: </label><input name="address" id="address" type="text"></div>
+        <div><label for="address">Address: </label><textarea placeholder="Address" name="address" id=""></textarea></div>
         <div><label for="photo">Profile Photo: <input name="photo" id="photo" type="file"></label></div>
-        <div><label for="password">Password: <input id="password" name="password" type="text"></label></div>
-        <div><label for="cpass">Coniform Password: </label><input name="cpass" id="cpass" type="text"></div>
-        <div class="Sign"><button type="submit">Sign up</button>  <button type="reset">Clear</button></div>
+        <div><label for="password">Password: <input placeholder="Password" id="password" name="password" type="text"></label></div>
+        <div><label for="cpass">Coniform Password: </label><input placeholder="Coniform Password" name="cpass" id="cpass" type="text"></div>
+        <div class="Sign"><input type="submit" value="Sign Up"></input>  <button type="reset">Clear</button></div>
     </form>
     <div class="footer">
         New User? <a href="regiter">Regiter Now</a>

@@ -9,6 +9,8 @@
         "WHTRIANL.C": "cpp",
         "BUBLESHO.C": "cpp",
         "DIAGON.C": "cpp",
-        "WHARSUM.C": "cpp"
+        "WHARSUM.C": "cpp",
+        "ARDOWH.C": "cpp",
+        "SORTINGA.C": "cpp"
     }
 }

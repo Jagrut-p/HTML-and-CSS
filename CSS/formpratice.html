@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Form Pratice</title>
+    </head>
+<style>
+    .form{
+        border: 1px solid black;
+        width: fit-content;
+        padding: 40px;
+        background-color: lightblue;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: gray;
+      margin: 0;
+    }
+    label{
+        display: block;
+        margin-bottom: 2px;
+    }
+    input{
+        margin-bottom: 15px;
+        padding: 8px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="password"]{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    
+    input[type="reset"],
+    input[type="submit"]{
+        margin-left: 60px ;
+        margin-top: 10px;
+    }
+    input:hover[type="submit"],
+    input:hover[type="reset"]{
+        background-color: red;
+    }
+    select{
+        width: 100%;
+        padding: 8px;
+    }
+</style>
+    <body>
+        <div><h1>Login Form</h1></div>
+        <div class="form">
+        <form action="Sign Up">
+            <div><label for="name">Name: </label><input placeholder="Name" type="text" id="name"></div>
+            <div><label for="email">Email: <input id="email" placeholder="Email" type="email"></label></div>
+                <div><label for="mnumber">Mobile Number: </label> <input placeholder="Mobile Number" id="mnumber" type="tel"></div>
+                <div><label for="dob">DOB: </label><input placeholder="DOB" id="dob" max="2005-6-14" min="2005-6-24" type="date"></div>
+                <div><label for="salary">Salary: </label><input min="1000" max="10000000000" id="salary" placeholder="Salary" type="number"></div>
+                <div><label for="gender">Gender:- </label>
+                                         Male: <input type="radio" value="male" name="gender">
+                                         Female: <input type="radio" value="female" name="gender">
+                                         Other: <input type="radio" name="gender" value="other">
+                                        </div>
+                <div><label for="city">City: </label>
+                <select name="" id="">
+                    <option value="None">------City------</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="USA">USA</option>
+                </select></div>
+                <div><label for="skills">Skills: 
+                    Java:<input type="checkbox" value="Jave">
+                    Python: <input type="checkbox" value="Python">
+                    CSS: <input type="checkbox" value="CSS">
+                    HTML: <input type="checkbox" name="" id="" value="CSS">
+                </label></div>
+                <div><label for="a">Address: </label><textarea name="" id="a"></textarea></div>
+                <div><label for="photo">Profile Photo: </label><input id="photo" type="file"></div>
+                <div><label for="password">Password: </label><input placeholder="Password" id="password" type="password"></div>
+                <div><label for="cpassowrd">Coniform Password: </label><input placeholder="Conifrom Password" id="cpassowrd" type="password"></div>
+                <div><input type="submit" value="Sign Up"> <input placeholder="Password" type="reset" value="Clear"></div>
+        </form>
+        </div>
+    </body>
+</html>

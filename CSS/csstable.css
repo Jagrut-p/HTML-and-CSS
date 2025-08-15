@@ -1,0 +1,48 @@
+img{
+    border-radius: 50%;
+}
+.can{
+    background-color: red;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+}
+.com{
+    background-color: rgb(8, 223, 8);
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+
+}
+.pend{
+    background-color: rgb(255, 123, 0);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+
+}
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+table{
+    text-align: center;
+    height: 500px;
+    width: 800px;
+    background-color: aliceblue;
+    border-collapse: collapse;
+
+}
+th{
+    border-bottom: 1px solid #aaaa;
+}
+td{
+    border-top: 1px solid #aaaa;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

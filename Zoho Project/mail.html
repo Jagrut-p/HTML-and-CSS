@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .cir{
+            background-image: url(./zohologo.jpeg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 10%;
+            border: 1px solid black;
+            position: relative;
+            left: 10px;
+        }
+        .nav1{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border: 1px solid black;
+            gap: 4.9%;
+            width: 100%;
+            height: 70px;
+            align-items: center;
+            position: relative;
+        }
+        .mail{
+            background-image: url(./mail.svg);
+            background-repeat: no-repeat;
+            background-size: 35%;
+            height: 150px;
+            width: 20%;
+        }
+        .background{
+            background-color: rgb(254, 242, 204);
+            width: 100%;
+            height: 1500px;
+        }
+        .nav2{
+            display: flex;
+            flex-direction: row;
+            gap: 3%;
+            align-items: center;
+            width: 100%;
+            height: 4%;
+            border: 1px solid black;
+        }
+        .navv2{
+            position: relative;
+            left: 400px;
+        }
+    </style>
 </head>
 <body>
-    <div class="nav"></div>
+    <div class="nav1">
+        <div class="cir"></div>
+        <div class="work">Workplace</div>
+        <div class="book">Books</div>
+        <div class="tab">Tables</div>
+        <div class="pay">Payroll</div>
+        <div class="team">TeamInBox</div>
+        <div class="zep">ZeptoMail</div>
+        <div class="pro">All Products</div>
+    </div>
+    <div class="background">
+    <div class="nav2">
+        <div class="mail"></div>
+        <div class="feat navv2">Features</div>
+        <div class="price navv2">Pricing</div>
+        <div class="ent navv2">Enterprise</div>
+        <div class="mig navv2">Migration</div>
+        <div class="re navv2">Resources</div>
+        <div class="con navv2">Contact</div>
+    </div>
+    </div>
 </body>
 </html>

@@ -14,7 +14,7 @@
 
         .cir {
             background-image: url(./zohologo.jpeg);
-            background-size: 100%;
+            background-size: 150%;
             background-repeat: no-repeat;
             height: 50px;
             width: 10%;
@@ -35,11 +35,13 @@
             position: relative;
         }
         .half{
-            border: 1px solid black;
+            width: 100%;
+            position: relative;
+            left: 60px;
+            top: 180px;
         }
         .host{
             font-size: 19px;
-            width: 47%;
         }
 
         .mail {
@@ -51,12 +53,13 @@
         }
         .but{
             font-size: 13px;
+            font-weight: bold;
         }
 
         .background {
             background-color: rgb(254, 242, 204);
             width: 100%;
-            height: 1500px;
+            height: 1460px;
         }
 
         .nav2 {
@@ -76,21 +79,58 @@
         }
         .first{
             display: flex;
-            border: 1px solid black;
-            width: 50%;
+            position: relative;
+            left: 40px;
+            width: 70%;
         }
         .secure{
             font-size: 48px;
-            width: 45%;
         }
         .full{
-            width: 600px;
-            border: 1px solid black;
-        }
-        .in{
-        }
+            position: relative;
+            left: 260px;
+            top: 85px;
+            width: 75%;
+        } 
         .get{
             font-size: 24px;
+            font-weight: bold;
+        }
+        .video{
+            background-image: url(./bigimg.png);
+            background-repeat: no-repeat;
+            background-size: 97%;
+            height: 660px;
+            width: 100%;
+            position: relative;
+            top: 10%;
+        }
+        .socialmedia{
+            background-image: url(./socialmedia.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 50px;
+            width: 40%;
+            position: relative;
+            left: 90px;
+            bottom: 23px;
+        }
+        .signusing{
+            position: relative;
+            top: 10px;
+            font-size: 13px;
+        }
+        .signboxred{
+            border: 1px solid red;
+            background-color: red;
+            align-content: center;
+            text-align: center;
+            color: white;
+            height: 40px;
+            font-weight: bold;
+        }
+        .agree{
+            font-size: 11px;
         }
     </style>
 </head>
@@ -119,21 +159,28 @@
     
     <div class="first">
         <div class="half">
-            <div class="secure">Secure business email for your organization</div>
+            <div class="secure">Secure business email for your organization</div><br><br>
             <div class="host">Host your business email on a secure, encrypted, privacy-guaranteed, and ad-free email service, and add a professional touch to every email that goes out.</div>
         </div>
         <div class="full">
-            <div class="get">Get started with ad-free email.</div>
+            <div class="get">Get started with ad-free email.</div><br>
             <div class="but">
                 <label for=""><input type="radio">Business Email</label>
                 <label for=""><input type="radio" name="" id="">Personal Email</label>
-            </div>
-        <div class="name in"><label for=""><input type="text" placeholder="*Name"></label></div>
-        <div class="name in"><label for=""><input type="email" placeholder="*Email"></label></div>
-        <div class="name in"><label for=""><input type="password" placeholder="*Password"></label></div>
-        <div class="con in"><label for=""><input type="tel" name="" placeholder="+91   Phone Number*" id=""></label></div>
+            </div><br>
+        <div class="name in"><label for=""><input type="text" style="height: 35px; width: 400px;" placeholder="*Name"></label></div> <br>
+        <div class="name in"><label for=""><input type="email" placeholder="*Email" style="width: 400px; height: 35px;"></label></div><br>
+        <div class="name in"><label for=""><input type="password" style="height: 35px; width: 400px;" placeholder="*Password"></label></div><br>
+        <div class="con in"><label for=""><input type="tel" style="height: 35px; width: 400px;" name="" placeholder="+91   Phone Number*" id=""></label></div><br>
+        <div class="agree"><input type="checkbox">I agree to the Terms of Service and Privacy Policy.</div><br>
+        <div class="signboxred">SIGN UP FOR FREE</div>
+        <div class="signusing">or sign in using <div class="socialmedia"></div></div>
         </div>
     </div>
+    <div class="video"></div>
     </div><!-- end of backgroundcolor -->
+    <div class="whitebackground">
+        <div class="symbol"></div>
+    </div><!-- end of whitebackground -->
 </body>
 </html>
